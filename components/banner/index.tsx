@@ -7,15 +7,17 @@ function OpenTime() {
 
 export default function Banner() {
   return (
-    <Box p="5">
+    <Box p="5" textAlign="center">
       <Heading size="xl">Liana Eyebrow Threading and Spa</Heading>
       <Divider my="3" />
       <Text>Eyebrow Bar in Savannah</Text>
       <OpenTime />
 
-      <Link href="https://www.fresha.com/a/liana-eyebrow-threading-spa-savannah-15-east-montgomery-cross-road-xdqg1yep/">
-        <Button colorScheme="blue">Book Now</Button>
-      </Link>
+      <Box my="5">
+        <Link href="https://www.fresha.com/a/liana-eyebrow-threading-spa-savannah-15-east-montgomery-cross-road-xdqg1yep/">
+          <Button colorScheme="blue">Book Now</Button>
+        </Link>
+      </Box>
     </Box>
   );
 }

@@ -13,11 +13,15 @@ export default function Home() {
       <Testimonials />
 
       <Box my="5">
-        <Heading size="md">Gallery</Heading>
+        <Heading size="lg" textAlign="center">
+          Gallery
+        </Heading>
       </Box>
 
-      <Box my="5">
-        <Heading size="md">Contact Us</Heading>
+      <Box mt="5">
+        <Heading size="lg" textAlign="center" my="3">
+          Contact Us
+        </Heading>
         <Map />
       </Box>
 

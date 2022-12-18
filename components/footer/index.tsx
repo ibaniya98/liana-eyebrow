@@ -3,7 +3,7 @@ import BusinessHours from "../business-hour";
 
 export default function Footer() {
   return (
-    <Box backgroundColor="gray.100" w="100%" p="5">
+    <Box backgroundColor="gray.100" w="100%" p={[5, null, 10]}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="5">
         <Box>
           {/* Logo */}
@@ -16,7 +16,8 @@ export default function Footer() {
               href="https://goo.gl/maps/vvp9yj7U8fvdafze9"
               target="_blank"
             >
-              15 E Montgomery Cross Rd Suit A, Savannah, GA 31406
+              <Text>15 E Montgomery Cross Rd Suit A</Text>
+              <Text>Savannah, GA 31406</Text>
             </Text>
           </Box>
 
