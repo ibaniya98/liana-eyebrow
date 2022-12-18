@@ -42,13 +42,13 @@ export default function Testimonials() {
       </SimpleGrid>
 
       <Box my="5" textAlign="center">
-        <Button colorScheme="blue">
+        <Button variant="purple">
           <Link href="https://search.google.com/local/reviews?placeid=ChIJI8VARZR1-4gRlA-qeTwOqgk">
             View More
           </Link>
         </Button>
 
-        <Button ml="3">
+        <Button ml="3" variant="ghost">
           <Link href="https://search.google.com/local/writereview?placeid=ChIJI8VARZR1-4gRlA-qeTwOqgk">
             Write Review
           </Link>

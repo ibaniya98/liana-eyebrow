@@ -20,6 +20,13 @@ export const theme = extendTheme({
       baseStyle: {
         ...raleway.style,
       },
+      variants: {
+        purple: {
+          backgroundColor: "#0070f3",
+          boxShadow: "0 4px 14px 0 rgb(0 118 255 / 39%)",
+          color: "white",
+        },
+      },
     },
   },
 });

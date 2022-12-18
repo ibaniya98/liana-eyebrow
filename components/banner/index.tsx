@@ -13,11 +13,11 @@ export default function Banner() {
       <Text>Eyebrow Bar in Savannah</Text>
       <OpenTime />
 
-      <Box my="5">
+      <Button variant="purple" my="5" p="6">
         <Link href="https://www.fresha.com/a/liana-eyebrow-threading-spa-savannah-15-east-montgomery-cross-road-xdqg1yep/">
-          <Button colorScheme="blue">Book Now</Button>
+          Book Now
         </Link>
-      </Box>
+      </Button>
     </Box>
   );
 }
