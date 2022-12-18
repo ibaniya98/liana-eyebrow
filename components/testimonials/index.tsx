@@ -24,7 +24,7 @@ function Testimonial({ reviewer, ratings, text }: Review) {
 
 export default function Testimonials() {
   return (
-    <Box>
+    <Box my="10">
       <Heading size="lg" textAlign="center" my="3">
         Testimonials
       </Heading>
