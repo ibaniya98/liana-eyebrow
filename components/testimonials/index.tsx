@@ -1,26 +1,7 @@
 import { Box, Button, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import { Review, reviews } from "../../data/reviews";
-
-function Testimonial({ reviewer, ratings, text }: Review) {
-  return (
-    <Box
-      p="5"
-      borderRadius="md"
-      backgroundColor="gray.50"
-      transition="all 0.25s linear"
-      _hover={{
-        backgroundColor: "white",
-        boxShadow: "xl",
-        cursor: "pointer",
-      }}
-    >
-      <Text>{ratings}</Text>
-      <Text>&quot;{text}&quot;</Text>
-      <Text>- {reviewer}</Text>
-    </Box>
-  );
-}
+import TestimonialCard from "../testimonial-card";
+import { reviews } from "../../data/reviews";
 
 export default function Testimonials() {
   return (
@@ -31,7 +12,7 @@ export default function Testimonials() {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing="5" p="5">
         {reviews.map((x) => {
           return (
-            <Testimonial
+            <TestimonialCard
               ratings={x.ratings}
               text={x.text}
               reviewer={x.reviewer}
