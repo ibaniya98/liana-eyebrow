@@ -9,7 +9,7 @@ interface RatingsProps {
 function Ratings({ count }: RatingsProps) {
   const stars = [];
   for (let i = 0; i < count; i++) {
-    stars.push(<StarIcon mr="1" color="orange" />);
+    stars.push(<StarIcon mr="1" color="orange" key={i} />);
   }
   return <Box my="2">{stars}</Box>;
 }

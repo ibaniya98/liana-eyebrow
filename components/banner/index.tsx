@@ -1,9 +1,12 @@
 import { Box, Button, Divider, Grid, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { getStoreStatus } from "../../utils/time";
+import { StoreHours } from "../../data/store";
 
 function OpenTime() {
-  return <Text>Opening at 12:00 tomorrow</Text>;
+  const displayText = getStoreStatus(StoreHours, "America/New_York");
+  return <Text>{displayText}</Text>;
 }
 
 export default function Banner() {
@@ -15,7 +18,7 @@ export default function Banner() {
 
           <Divider my="5" maxW="600px" borderColor="gray.300" />
 
-          <Box fontSize="lg">
+          <Box fontSize="xl">
             <Text>Eyebrow Bar in Savannah</Text>
             <OpenTime />
           </Box>
