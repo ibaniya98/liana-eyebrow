@@ -1,4 +1,4 @@
-interface StoreHour {
+export interface StoreHour {
   open: number;
   close: number;
 }

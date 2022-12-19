@@ -1,29 +1,11 @@
 import { Box, Grid, SimpleGrid, Text } from "@chakra-ui/react";
 import { StoreHours } from "../../data/store";
+import { getFormattedHour } from "../../utils/time";
 
 interface RowProps {
   day: string;
   open: number;
   close: number;
-}
-
-function getFormattedHour(time: number): string {
-  if (time < 0 || time > 24) {
-    return "";
-  }
-
-  let meridiem = "AM";
-
-  if (time >= 12) {
-    meridiem = "PM";
-  }
-
-  let hour = time;
-  if (time > 12) {
-    hour = time % 12;
-  }
-
-  return `${String(hour).padStart(2, "0")}:00 ${meridiem}`;
 }
 
 function Row({ day, open, close }: RowProps) {
