@@ -22,8 +22,8 @@ export const theme = extendTheme({
       },
       variants: {
         purple: {
-          backgroundColor: "#0070f3",
-          boxShadow: "0 4px 14px 0 rgb(0 118 255 / 39%)",
+          backgroundColor: "#5226ba",
+          boxShadow: "0 4px 14px 0 rgb(81 47 184 / 39%)",
           color: "white",
         },
       },
