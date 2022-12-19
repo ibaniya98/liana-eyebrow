@@ -7,7 +7,6 @@ export default function Footer() {
     <Box backgroundColor="gray.100" w="100%" p={[5, null, 10]}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="5">
         <Box>
-          {/* Logo */}
           <Box>
             <Image
               src="/logo/liana-eyebrows-logo.png"

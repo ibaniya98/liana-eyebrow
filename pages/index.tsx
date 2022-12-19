@@ -5,10 +5,12 @@ import Testimonials from "../components/testimonials";
 import Map from "../components/map";
 import Footer from "../components/footer";
 import Gallery from "../components/gallery";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
     <Box as="main">
+      <Navbar />
       <Banner />
 
       <Testimonials />
