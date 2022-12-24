@@ -18,8 +18,8 @@ export default function Banner() {
 
           <Divider my="5" maxW="600px" borderColor="gray.300" />
 
-          <Box fontSize="xl">
-            <Text>Eyebrow Bar in Savannah</Text>
+          <Box>
+            <Text fontSize="xl">Elevate your style with perfect eyebrows</Text>
             <OpenTime />
           </Box>
 
