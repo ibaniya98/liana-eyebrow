@@ -14,6 +14,7 @@ function Tile({ title, bgGradient, icon }: TileProps) {
   return (
     <Box
       w="100%"
+      maxW="200px"
       p="10"
       borderRadius="lg"
       boxShadow="lg"
@@ -21,12 +22,13 @@ function Tile({ title, bgGradient, icon }: TileProps) {
       textAlign="center"
       textColor="white"
       bgGradient={bgGradient}
+      mx="auto"
     >
       <Box fontSize="6xl" display="flex" justifyContent="center" mb="5">
         {icon}
       </Box>
 
-      <Heading size="sm" letterSpacing="wider">
+      <Heading size="sm" letterSpacing="wide">
         {title}
       </Heading>
     </Box>
@@ -36,7 +38,7 @@ function Tile({ title, bgGradient, icon }: TileProps) {
 export default function About() {
   return (
     <Box>
-      <SimpleGrid columns={2} gap="5">
+      <SimpleGrid columns={{ base: 1, sm: 2 }} gap="5">
         <Tile
           title="Honest Pricing"
           bgGradient="linear(40deg, #e87e16 0%, #f0de14 100%)"
