@@ -5,8 +5,8 @@ import { reviews } from "../../data/reviews";
 
 export default function Testimonials() {
   return (
-    <Box my="10">
-      <Heading size="lg" textAlign="center" my="3">
+    <Box my="10" py={{ base: 5, md: 10 }}>
+      <Heading size="lg" textAlign="center" my="5">
         Testimonials
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing="5" p="5">

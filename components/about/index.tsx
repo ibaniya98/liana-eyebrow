@@ -24,6 +24,12 @@ function Tile({ title, bgGradient, icon, boxShadow }: TileProps) {
       textColor="white"
       bgGradient={bgGradient}
       mx="auto"
+      transition="all 0.15s linear"
+      _hover={{
+        boxShadow: "xl",
+        cursor: "pointer",
+        transform: "scale(1.05)",
+      }}
     >
       <Box fontSize="6xl" display="flex" justifyContent="center" mb="5">
         {icon}
