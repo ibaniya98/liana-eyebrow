@@ -17,7 +17,11 @@ export default function Home() {
       <Testimonials />
 
       <Box py="10" px={[10, null, 20]} backgroundColor="gray.100">
-        <SimpleGrid my="5" columns={[1, null, 2]} spacing="10">
+        <SimpleGrid
+          my="5"
+          columns={{ base: 1, md: 2 }}
+          spacing={{ base: 10, md: 20 }}
+        >
           <Box
             display="flex"
             flexDirection="column"
