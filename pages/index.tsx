@@ -14,7 +14,11 @@ export default function Home() {
       <Navbar />
       <Banner />
 
-      <Box py="10" px={[10, null, 20]} backgroundColor="gray.100">
+      <Box
+        py="10"
+        px={[10, null, 20]}
+        bgGradient="linear(0deg, #FAF5FF 0%, #FFFFFF 100%)"
+      >
         <SimpleGrid
           my="5"
           columns={{ base: 1, md: 2 }}
@@ -53,7 +57,7 @@ export default function Home() {
 
       <Testimonials />
 
-      <Box my="10">
+      <Box py="10" bgGradient="linear(0deg, #FFFFFF 0%, #FAF5FF 100%)">
         <Heading size="lg" textAlign="center" my="5">
           Gallery
         </Heading>
