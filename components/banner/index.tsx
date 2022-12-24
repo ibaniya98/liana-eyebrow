@@ -11,15 +11,20 @@ function OpenTime() {
 
 export default function Banner() {
   return (
-    <Box p="5" m="5">
-      <Grid gridTemplateColumns={{ base: "1fr", md: "3fr 2fr" }} gap="5">
+    <Box p="5" mx="5" my="5" mb="10">
+      <Grid
+        gridTemplateColumns={{ base: "1fr", md: "3fr 2fr" }}
+        gap="5"
+        pt={{ base: 10, md: 20 }}
+        pb={{ base: 10, md: 30 }}
+      >
         <Box display="flex" justifyContent="center" flexDir="column">
           <Heading size="xl">Liana Eyebrow Threading and Spa</Heading>
 
           <Divider my="5" maxW="600px" borderColor="gray.300" />
 
-          <Box fontSize="xl">
-            <Text>Eyebrow Bar in Savannah</Text>
+          <Box>
+            <Text fontSize="xl">Elevate your style with perfect eyebrows</Text>
             <OpenTime />
           </Box>
 
