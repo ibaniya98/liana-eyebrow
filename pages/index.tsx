@@ -14,8 +14,6 @@ export default function Home() {
       <Navbar />
       <Banner />
 
-      <Testimonials />
-
       <Box py="10" px={[10, null, 20]} backgroundColor="gray.100">
         <SimpleGrid
           my="5"
@@ -52,6 +50,8 @@ export default function Home() {
           <About />
         </SimpleGrid>
       </Box>
+
+      <Testimonials />
 
       <Box my="10">
         <Heading size="lg" textAlign="center" my="5">
