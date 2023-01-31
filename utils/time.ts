@@ -44,11 +44,16 @@ export function getStoreStatus(
   const currentWeekDay = getWeekdayForTimezone(currentTime, storeTimezone);
   const currentHour = getHourForTimezone(currentTime, storeTimezone);
 
-  // determine if the store is still open for today
+  // determine if it is a valid weekday
   if (currentWeekDay in storeHours) {
     const { open, close } = storeHours[currentWeekDay];
+
+    // check if the store is open already
     if (Number(currentHour) >= open && Number(currentHour) <= close) {
       return `Open until ${getFormattedHour(close)} today`;
+    } else if (Number(currentHour) < open) {
+      // store is yet to open today
+      return `Opens at ${getFormattedHour(open)} today`;
     }
   }
 
