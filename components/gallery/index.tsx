@@ -3,15 +3,17 @@ import Image from "next/image";
 import { useState } from "react";
 
 const photos = [
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
-  "/images/eyebrow-one.jpg",
+  "/images/eyebrow-three.jpg",
+  "/images/henna-one.jpg",
+  "/images/facial-one.jpg",
+
+  "/images/eyebrow-two.webp",
+  "/images/facial-two.jpg",
+  "/images/eyebrow-five.jpg",
+
+  "/images/henna-two.jpg",
+  "/images/eyebrow-four.jpg",
+  "/images/henna-three.jpg",
 ];
 
 interface PhotoThumbnailProps {
@@ -27,6 +29,7 @@ function PhotoThumbnail({ imageSrc, altText }: PhotoThumbnailProps) {
       bg="white"
       position="relative"
       minH="350px"
+      borderRadius="md"
     >
       <Image
         src={imageSrc}

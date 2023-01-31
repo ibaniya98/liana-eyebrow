@@ -40,8 +40,8 @@ export default function Banner() {
             y2="189.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#d6d9ff"></stop>
-            <stop offset="1" stop-color="#5226ba"></stop>
+            <stop stopColor="#d6d9ff"></stop>
+            <stop offset="1" stopColor="#5226ba"></stop>
           </linearGradient>
         </defs>
       </Box>

@@ -19,7 +19,7 @@ export default function TestimonialCard({ reviewer, ratings, text }: Review) {
     <Box
       p="5"
       borderRadius="md"
-      backgroundColor="gray.50"
+      backgroundColor="purple.50"
       transition="all 0.25s linear"
       _hover={{
         backgroundColor: "white",
