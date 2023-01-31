@@ -25,11 +25,16 @@ function PhotoThumbnail({ imageSrc, altText }: PhotoThumbnailProps) {
   return (
     <Box
       cursor="pointer"
-      boxShadow="xl"
+      boxShadow="md"
       bg="white"
       position="relative"
       minH="350px"
       borderRadius="md"
+      transition="all 0.25s linear"
+      _hover={{
+        boxShadow: "xl",
+        cursor: "pointer",
+      }}
     >
       <Image
         src={imageSrc}
